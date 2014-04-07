@@ -1,2 +1,5 @@
+include ':console', ':android'
 rootProject.name = 'test-project'
+
+include 'android'
 
