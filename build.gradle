@@ -1,20 +1,21 @@
 buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:0.9.+'
-    }
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:0.9.+'
+    classpath 'org.robolectric.gradle:gradle-android-test-plugin:0.9.+'
+  }
 }
 
 allprojects {
-    version = '1.0'
-    group = 'com.andrewreitz.test'
+  version = '1.0'
+  group = 'com.andrewreitz.test'
 
-    repositories {
-        mavenCentral()
-        maven {
-            url "https://oss.sonatype.org/content/repositories/snapshots/"
-        }
+  repositories {
+    mavenCentral()
+    maven {
+      url "https://oss.sonatype.org/content/repositories/snapshots/"
     }
+  }
 }

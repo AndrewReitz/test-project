@@ -4,8 +4,9 @@ apply plugin: 'java'
 mainClassName = "com.andrewreitz.test.Main"
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
+  testCompile 'junit:junit:4.11'
 }
