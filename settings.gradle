@@ -1,4 +1,4 @@
-include ':console', ':android'
+include ':java-console', ':android', 'scala-console'
 rootProject.name = 'test-project'
 
 include 'android'
