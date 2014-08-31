@@ -9,13 +9,8 @@ buildscript {
 }
 
 apply plugin: 'com.android.application'
+apply plugin: 'android-sdk-manager'
 apply plugin: 'me.champeau.gradle.groovy-android'
-
-repositories {
-  maven {
-    url = 'https://oss.jfrog.org/oss-snapshot-local/'
-  }
-}
 
 android {
   compileSdkVersion 19
@@ -36,5 +31,5 @@ android {
 }
 
 dependencies {
-  compile 'org.codehaus.groovy:groovy:2.4.0-SNAPSHOT:grooid'
+  compile 'org.codehaus.groovy:groovy:2.4.0-beta-1:grooid'
 }
