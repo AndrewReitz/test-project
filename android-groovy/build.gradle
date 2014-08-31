@@ -8,8 +8,8 @@ buildscript {
   }
 }
 
-apply plugin: 'com.android.application'
 apply plugin: 'android-sdk-manager'
+apply plugin: 'com.android.application'
 apply plugin: 'me.champeau.gradle.groovy-android'
 
 android {
