@@ -3,8 +3,8 @@ buildscript {
     jcenter()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:0.12.+'
-    classpath 'me.champeau.gradle:gradle-groovy-android-plugin:0.2.+'
+    classpath 'com.android.tools.build:gradle:0.14.1'
+    classpath 'me.champeau.gradle:gradle-groovy-android-plugin:0.3.+'
   }
 }
 
@@ -13,12 +13,12 @@ apply plugin: 'com.android.application'
 apply plugin: 'me.champeau.gradle.groovy-android'
 
 android {
-  compileSdkVersion 19
-  buildToolsVersion "19.1.0"
+  compileSdkVersion 21
+  buildToolsVersion "21.1.0"
 
   defaultConfig {
-    minSdkVersion 14
-    targetSdkVersion 19
+    minSdkVersion 15
+    targetSdkVersion 21
 
     versionCode 1
     versionName "1.0"
@@ -31,5 +31,5 @@ android {
 }
 
 dependencies {
-  compile 'org.codehaus.groovy:groovy:2.4.0-beta-1:grooid'
+  compile 'org.codehaus.groovy:groovy:2.4.0-beta-3:grooid'
 }
